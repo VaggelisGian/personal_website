@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sams', sans-serif;
+}
+
+body {
+    background-image: url(pics/backgroundd.jpg);
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.navbar {
+    background: #131313;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(19, 19, 19, 0.6);
+    /* 70% transparent */
+    /* rest of the CSS */
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0px 17%;
+    padding: 0 50px;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    height: 100px;
+}
+
+.navbar__links {
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 30px;
+    height: 100%;
+}
+
+.navbar__links:hover {
+    color: rgb(88, 59, 48);
+    transition: 0.5s ease;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: 83vh;
+    width: 100vh;
+    z-index: 1;
+    padding: 0 50px;
+}
+
+.main__content {
+    display: box;
+}
+
+.main__container {
+    font-size: 18px;
+    height: 300px;
+}
+
+.submit {
+    padding: 0 50px;
+    display: grid;
+    margin: 0px 17%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20vh;
+}
+
+.submit input[type="email"],
+.submit input[type="name"],
+.submit textarea {
+    padding: 0 50px;
+    text-align: center;
+}
+
+.submit__note {
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    margin: 0 auto;
+    font-size: 120%;
+}
+
+.about__me {
+    display: block;
+    text-align: -webkit-left;
+    font-size: 120%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+    width: 83vh;
+}
+
+.about__content {
+    display: block;
+    background-color: rgba(75, 50, 41, 0.164);
+    padding: 10px;
+}
+
+.music {
+    display: block;
+    text-align: -webkit-center;
+    font-size: 120%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+    width: 130vh;
+}
+
+.wikitable {
+    background-color: #f8f9fa;
+    color: #202122;
+    margin: 1em 0;
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+}
+
+.supplements {
+    display: block;
+    text-align: -webkit-left;
+    font-size: 120%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10vh;
+    width: 150vh;
+}
+
+
+/* Typewriter effect 1 */
+
+.animation {
+    padding-top: 10%;
+    color: white;
+    text-align: left;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+}
+
+@keyframes typing {
+    0.0000%,
+    27.3488% {
+        content: "";
+    }
+    1.1395%,
+    26.2093% {
+        content: "D";
+    }
+    2.2791%,
+    25.0698% {
+        content: "De";
+    }
+    3.4186%,
+    23.9302% {
+        content: "Dev";
+    }
+    4.5581%,
+    22.7907% {
+        content: "Deve";
+    }
+    5.6977%,
+    21.6512% {
+        content: "Devel";
+    }
+    6.8372%,
+    20.5116% {
+        content: "Develo";
+    }
+    7.9767%,
+    19.3721% {
+        content: "Develop";
+    }
+    9.1163%,
+    18.2326% {
+        content: "Develope";
+    }
+    10.2558%,
+    17.0930% {
+        content: "Developer";
+    }
+    30.7674%,
+    51.2791% {
+        content: "";
+    }
+    31.9070%,
+    50.1395% {
+        content: "E";
+    }
+    33.0465%,
+    49.0000% {
+        content: "En";
+    }
+    34.1860%,
+    47.8605% {
+        content: "Eng";
+    }
+    35.3256%,
+    46.7209% {
+        content: "Engi";
+    }
+    36.4651%,
+    45.5814% {
+        content: "Engin";
+    }
+    37.6047%,
+    44.4419% {
+        content: "Engine";
+    }
+    38.6977%,
+    43.3593% {
+        content: "Enginee";
+    }
+    39.8372%,
+    42.2498% {
+        content: "Engineer";
+    }
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.typewriter {
+    --caret: currentcolor;
+}
+
+.typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+    border-right: 0;
+}
+
+@media (prefers-reduced-motion) {
+    .typewriter::after {
+        animation: none;
+    }
+    @keyframes sequencePopup {
+        0%,
+        100% {
+            content: "developer";
+        }
+        50% {
+            content: "engineer";
+        }
+    }
+    .typewriter::before {
+        content: "developer";
+        animation: sequencePopup 12s linear infinite;
+    }
+}
+
+
+/**/
